@@ -16,6 +16,16 @@ class Gerenciamento():
  
 
 codigo = int(input('Informe o código :'))
+def venda():
+    item = str(input('Informe o produto :'))
+    valor = float(input('Informe o valor do produto :'))
+    quantidade = int(input('Quantidade do Produto :'))
+    pedido = [item, valor, quantidade]
+    soma = valor * quantidade
+    print(f'Item: {pedido} Valor Total : {soma}')
+
+
+
 time.sleep(1)
 print('|------------API COMERCE-------------|')
 time.sleep(0.5)
@@ -23,6 +33,7 @@ time.sleep(0.5)
 def api():
     if codigo > 1 and codigo < 100:
         print('|--------------APROVADO--------------|')
+        print(f'Item : {venda()}')
         print(f' Pedido : {codigo} '), Gerenciamento.aprovado()
 
     elif codigo > 100 and codigo < 500:

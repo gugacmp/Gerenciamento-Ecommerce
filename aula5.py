@@ -1,4 +1,5 @@
 import time
+import datetime
 
 class Gerenciamento():
     def atualizar():
@@ -57,6 +58,8 @@ def hub():
         if codigo > 1 and codigo < 100:
             print('|--------------IMPORTAR--------------|')
             Gerenciamento.atualizando()
+            now = datetime.datetime.now()
+            print(f'Atualizado : {now}')
     importar()    
 
     def atualizar():

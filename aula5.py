@@ -76,8 +76,14 @@ def hub():
 
 hub()
 
-def venda():
-    pass
+def aprovado():
+    if codigo == codigo:
+        print(f'Emitindo a Venda : {codigo}')
+        print('Resumo')
+        print(f'Venda : {codigo}')
+        time.sleep(0.5)
+
+aprovado()
 
 
 

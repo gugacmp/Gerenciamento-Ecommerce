@@ -77,8 +77,9 @@ def hub():
 hub()
 
 def aprovado():
+    rastreio = random.randint(1500,4500)
     if codigo == codigo:
-        print(f'Emitindo a Venda : {codigo}')
+        print(f'Emitindo a Venda : {codigo} | Código Rastreio : {rastreio}')
         print('Resumo')
         print(f'Venda : {codigo}')
         time.sleep(0.5)

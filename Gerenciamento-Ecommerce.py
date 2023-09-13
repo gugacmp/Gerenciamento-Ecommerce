@@ -101,7 +101,7 @@ def aprovado():
 aprovado()
 
 
-def gerar_pdf( aprovado):
+def gerar_pdf(aprovado):
     c = canvas.Canvas(aprovado, pagesize=letter)
     largura_pagina, altura_pagina = letter
 

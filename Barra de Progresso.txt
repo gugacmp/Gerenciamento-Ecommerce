@@ -1,0 +1,28 @@
+Adicionar a barra de progresso : 
+Dados : 
+-> pip install tqdm
+E digite este código em seu editor.
+
+from tqdm import tqdm 
+  
+for i in tqdm (range (100), desc="Loading..."): 
+    pass
+Resultado:
+
+python-tqdm1
+
+Isso fornece uma barra de carregamento muito rápida, porque não há nada no loop., Você pode substituir a palavra-chave pass por qualquer trabalho que deseja fazer no loop for.
+
+from tqdm import tqdm 
+import time 
+  
+  
+for i in tqdm (range (101),  
+               desc="Loading…",  
+               ascii=False, ncols=75): 
+    time.sleep(0.01) 
+      
+print("Complete.") 
+Resultado:
+
+python-tqdm-2

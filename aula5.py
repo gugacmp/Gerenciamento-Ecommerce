@@ -6,24 +6,24 @@ import qrcode
 
 print("================================ BEM VINDO ======================================")
 print("================================ HUB COMMERCE ===================================")
-print("================================ VERSÃO 1.2 =====================================")
+print("================================ VERSÃO 1.3.1 =====================================")
 #Iniciando...: 100%|█████████████████████████████████████| 100/100 [00:20<00:00,  4.96it/s]
 for i in tqdm (range (100),
                 colour='CYAN',
-               desc="Iniciando...",
-               ascii=False, ncols=90):
+               desc="Conectando...",
+               ascii=False, ncols=80):
                time.sleep(0.1)
 
 print("================================ BEM VINDO ======================================")
 print("================================ MENU HUB =======================================")
 print(" ___________________________")
 print("|_________ OPÇÕES __________|")
-print("| Atualizar                 |")
-print("| Analise                   |")
-print("| Enviar                    |")
-print("| Aprovado                  |")
-print("| Atualizando               |")
-print("| Cancelado                 |")
+print("| Código                    |")
+print("| Produto                   |")
+print("| Valor                     |")
+print("| Quantidade                |")
+print("| Cliente                   |")
+print("| Sair                      |")
 print("|___________________________|")
 class Gerenciamento():
     def atualizar():
